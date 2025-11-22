@@ -1,0 +1,91 @@
+body{
+    border: rgb(236, 184, 147);
+    font-family:Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+.container{
+   display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100%;
+
+}
+.White{
+    
+    justify-content: center;
+    align-items: center;
+    width:400px;
+  height: 400px;
+   border-radius: 40px;
+  background-color: white;
+  box-shadow: 20px 20px 20px rgb(0, 0, 0);
+  
+}
+.White::after{
+        content: "";              
+  position: absolute;       
+   top: 0;                  
+  left: 0;                  
+  width: 100%;              
+  height: 100%;   
+  background-color: rgba(2, 79, 12, 0.4);  
+  border-radius: 5px;
+   z-index: -1; 
+
+}
+
+
+.zr{
+    width:200px;
+  height:50px;
+  color: #ffffff;
+   background-color: rgb(5, 93, 37);
+   border:white;
+   border-radius: 5px;
+   box-shadow: 5px 5px 10px rgb(27, 96, 15);
+    position: relative;
+
+}
+
+.zr:hover::after{
+    content: "";              
+  position: absolute;       
+   top: 0;                  
+  left: 0;                  
+  width: 100%;              
+  height: 100%;   
+  background-color: rgba(132, 109, 27, 0.4);  
+  border-radius: 5px;  
+  box-shadow: 5px 5px 10px rgb(99, 112, 1);
+  pointer-events: none; 
+    
+}
+.zr:active::after{
+    content: "";  
+    background-color: rgba(4, 135, 35, 0.6);
+pointer-events: none; }
+    
+.zust{
+  
+   position: fixed; 
+    top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    object-fit: cover;  
+    z-index: -1; }
+
+
+ html, body {
+  height: 100%;
+  margin: 0;
+}
+
+  
+ .d{
+    color: rgb(116, 111, 111);
+ }
+ .p{
+    color: rgb(3, 93, 24);
+ }
